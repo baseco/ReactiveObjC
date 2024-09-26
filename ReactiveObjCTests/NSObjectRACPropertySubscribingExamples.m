@@ -12,7 +12,11 @@
 #import "RACTestObject.h"
 #import "NSObjectRACPropertySubscribingExamples.h"
 
+#ifdef SWIFTPM
+#import "EXTScope.h"
+#else
 #import <ReactiveObjC/EXTScope.h>
+#endif
 #import "NSObject+RACDeallocating.h"
 #import "NSObject+RACPropertySubscribing.h"
 #import "RACCompoundDisposable.h"

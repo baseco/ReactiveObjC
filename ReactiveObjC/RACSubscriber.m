@@ -8,7 +8,11 @@
 
 #import "RACSubscriber.h"
 #import "RACSubscriber+Private.h"
+#ifdef SWIFTPM
+#import "EXTScope.h"
+#else
 #import <ReactiveObjC/EXTScope.h>
+#endif
 #import "RACCompoundDisposable.h"
 
 @interface RACSubscriber ()

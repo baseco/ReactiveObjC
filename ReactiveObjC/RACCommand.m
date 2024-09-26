@@ -7,7 +7,11 @@
 //
 
 #import "RACCommand.h"
+#ifdef SWIFTPM
+#import "EXTScope.h"
+#else
 #import <ReactiveObjC/EXTScope.h>
+#endif
 #import "NSArray+RACSequenceAdditions.h"
 #import "NSObject+RACDeallocating.h"
 #import "NSObject+RACDescription.h"

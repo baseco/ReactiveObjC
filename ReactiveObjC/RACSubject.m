@@ -7,7 +7,11 @@
 //
 
 #import "RACSubject.h"
+#ifdef SWIFTPM
+#import "EXTScope.h"
+#else
 #import <ReactiveObjC/EXTScope.h>
+#endif
 #import "RACCompoundDisposable.h"
 #import "RACPassthroughSubscriber.h"
 

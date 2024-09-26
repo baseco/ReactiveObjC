@@ -14,8 +14,16 @@ FOUNDATION_EXPORT double ReactiveObjCVersionNumber;
 //! Project version string for ReactiveObjC.
 FOUNDATION_EXPORT const unsigned char ReactiveObjCVersionString[];
 
+#ifdef SWIFTPM
+#import "EXTKeyPathCoding.h"
+#else
 #import <ReactiveObjC/EXTKeyPathCoding.h>
+#endif
+#ifdef SWIFTPM
+#import "EXTScope.h"
+#else
 #import <ReactiveObjC/EXTScope.h>
+#endif
 #import <ReactiveObjC/NSArray+RACSequenceAdditions.h>
 #import <ReactiveObjC/NSData+RACSupport.h>
 #import <ReactiveObjC/NSDictionary+RACSequenceAdditions.h>

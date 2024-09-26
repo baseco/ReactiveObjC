@@ -11,7 +11,11 @@
 
 #import "NSObject+RACKVOWrapper.h"
 
+#ifdef SWIFTPM
+#import "EXTKeyPathCoding.h"
+#else
 #import <ReactiveObjC/EXTKeyPathCoding.h>
+#endif
 #import "NSObject+RACDeallocating.h"
 #import "RACCompoundDisposable.h"
 #import "RACDisposable.h"

@@ -12,7 +12,11 @@
 #import "RACSubscriberExamples.h"
 
 #import <libkern/OSAtomic.h>
+#ifdef SWIFTPM
+#import "EXTScope.h"
+#else
 #import <ReactiveObjC/EXTScope.h>
+#endif
 #import "RACBehaviorSubject.h"
 #import "RACCompoundDisposable.h"
 #import "RACDisposable.h"

@@ -7,7 +7,11 @@
 //
 
 #import "NSNotificationCenter+RACSupport.h"
+#ifdef SWIFTPM
+#import "EXTScope.h"
+#else
 #import <ReactiveObjC/EXTScope.h>
+#endif
 #import "RACSignal.h"
 #import "RACSubscriber.h"
 #import "RACDisposable.h"

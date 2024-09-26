@@ -7,7 +7,11 @@
 //
 
 #import "RACTuple.h"
+#ifdef SWIFTPM
+#import "EXTKeyPathCoding.h"
+#else
 #import <ReactiveObjC/EXTKeyPathCoding.h>
+#endif
 #import "RACTupleSequence.h"
 
 @implementation RACTupleNil

@@ -17,4 +17,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: swift build -v
+      run: xcodebuild build -scheme ReactiveObjC -sdk iphonesimulator17.5  -destination "OS=16.0,name=iPhone 13 Pro"
+

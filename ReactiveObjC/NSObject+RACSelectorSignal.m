@@ -7,7 +7,11 @@
 //
 
 #import "NSObject+RACSelectorSignal.h"
+#ifdef SWIFTPM
+#import "EXTRuntimeExtensions.h"
+#else
 #import <ReactiveObjC/EXTRuntimeExtensions.h>
+#endif
 #import "NSInvocation+RACTypeParsing.h"
 #import "NSObject+RACDeallocating.h"
 #import "RACCompoundDisposable.h"

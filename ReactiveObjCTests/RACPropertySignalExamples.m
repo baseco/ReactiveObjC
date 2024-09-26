@@ -11,7 +11,11 @@
 
 #import "RACTestObject.h"
 
+#ifdef SWIFTPM
+#import "EXTKeyPathCoding.h"
+#else
 #import <ReactiveObjC/EXTKeyPathCoding.h>
+#endif
 #import "NSObject+RACDeallocating.h"
 #import "NSObject+RACPropertySubscribing.h"
 #import "NSObject+RACSelectorSignal.h"

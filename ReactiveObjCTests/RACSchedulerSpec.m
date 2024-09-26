@@ -13,7 +13,11 @@
 #import "RACScheduler+Private.h"
 #import "RACQueueScheduler+Subclass.h"
 #import "RACDisposable.h"
+#ifdef SWIFTPM
+#import "EXTScope.h"
+#else
 #import <ReactiveObjC/EXTScope.h>
+#endif
 #import "RACTestExampleScheduler.h"
 #import <libkern/OSAtomic.h>
 

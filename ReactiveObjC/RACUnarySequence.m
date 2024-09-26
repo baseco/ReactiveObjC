@@ -7,7 +7,11 @@
 //
 
 #import "RACUnarySequence.h"
+#ifdef SWIFTPM
+#import "EXTKeyPathCoding.h"
+#else
 #import <ReactiveObjC/EXTKeyPathCoding.h>
+#endif
 #import "NSObject+RACDescription.h"
 
 @interface RACUnarySequence ()

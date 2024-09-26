@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#ifdef SWIFTPM
+#import "EXTKeyPathCoding.h"
+#else
 #import <ReactiveObjC/EXTKeyPathCoding.h>
+#endif
 #import "metamacros.h"
 
 /// Creates a signal which observes `KEYPATH` on `TARGET` for changes.

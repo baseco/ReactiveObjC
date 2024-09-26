@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#ifdef SWIFTPM
+#import "EXTKeyPathCoding.h"
+#else
 #import <ReactiveObjC/EXTKeyPathCoding.h>
+#endif
 
 @class RACSignal<__covariant ValueType>;
 

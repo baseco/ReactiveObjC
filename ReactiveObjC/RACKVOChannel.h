@@ -7,7 +7,11 @@
 //
 
 #import "RACChannel.h"
+#ifdef SWIFTPM
+#import "EXTKeyPathCoding.h"
+#else
 #import <ReactiveObjC/EXTKeyPathCoding.h>
+#endif
 #import "metamacros.h"
 
 /// Creates a RACKVOChannel to the given key path. When the targeted object
