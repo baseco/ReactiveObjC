@@ -88,10 +88,10 @@ let package = Package(
 "RACUnit.m",
 "RACValueTransformer.m",
             ],
-            publicHeadersPath: ".",
+            publicHeadersPath: "include",
             cSettings: [
-                .headerSearchPath("."),
-                                .define("SWIFTPM", to: "1") // Defines SWIFTPM=1
+                .headerSearchPath("include/ReactiveObjC"),
+                .define("SWIFTPM", to: "1") 
             ]
         )
 
